@@ -1,0 +1,22 @@
+{
+  "name": "vanta-3d-chess",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A premium, genuinely 3D browser chess game with verified chess rules and Stockfish AI.",
+  "scripts": {
+    "postinstall": "node scripts/copy-stockfish.mjs",
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node tests/chess-rules.test.mjs"
+  },
+  "dependencies": {
+    "chess.js": "1.4.0",
+    "stockfish": "19.0.1",
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "vite": "7.1.11"
+  }
+}
